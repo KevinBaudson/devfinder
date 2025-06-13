@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --background-button: #0079FF;
+    --text-muted: #697C9A;
+    --background-box-light:#4B6A9B;
+    --title-md-light: hsl(217, 21%, 21%);
+    --background-light: #F6F8FF;
+    --background-data-md-dark: #2B3442;
+    --text-md-dark: #FFFFFF;
+    --background-input: #FFFFFF;
+    --background-body: #141D2F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+    background-color: var(--background-light);
+}
+
+body.dark {
+  background-color: var(--background-body);
+  color: var(--text-md-dark);
+}
+
+.container-data,
+.container-input,
+.header {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark .input-name {
+  background-color: var(--background-body) !important;
+  color: var(--text-md-dark) !important;
+}
+
+.dark .logo {
+  color: var(--background-light);
+}
+
+.dark .theme-button {
+  color: var(--background-light);
+}
